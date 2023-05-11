@@ -7,15 +7,15 @@ function cambioRegla() {
   switch (estado) {
     
       case 0:
-      //Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor1
+      //0 indica que pasamos de celsius a farenheid
       let numeroUno = celsiusAFarenheid(grados);
-      document.getElementById("grados").innerHTML = `${numeroUno} F°`
+      document.getElementById("grados").innerHTML = `${numeroUno.toFixed(1)} F°`
       
       let listaG = document.querySelectorAll('.dia .dia__grados')
 
       for(let elementos of listaG){
         
-        elementos.innerHTML = celsiusAFarenheid(Math.round(elementos.innerHTML))
+        elementos.innerHTML = celsiusAFarenheid(elementos.innerHTML).toFixed(1)
       }
      
       break;
@@ -40,7 +40,7 @@ function cambioRegla() {
 
 
 function celsiusAFarenheid(x) {
-  let numero = Math.round(x * 1.8 + 32);
+  let numero = x * 1.8 + 32;
 
   estado = 1;
   return numero;
@@ -48,7 +48,7 @@ function celsiusAFarenheid(x) {
 
 function farenheidACelsius(x) {
   let numero = Math.round((x - 32) / 1.8);
-  //151,56 57,6
+  
 
   estado = 0;
   return numero;
