@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fz-1 {
+  font-size: 0.8rem;
+}
+
+.fz-2 {
+  font-size: 1.5rem;
+}
+
+.fz-3 {
+  font-size: 2rem;
+}
+
+.fz-4 {
+  font-size: 2.5rem;
+}
+
+.fz-5 {
+  font-size: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 2.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(219, 188, 223);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.card {
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(158, 158, 158, 0.5)), url(../img/nubes-mullidas-cielo-ventoso.avif);
+  background-size: 100% 100%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  color: white;
+  width: 400px;
+}
+.card .header {
+  height: 44%;
+  display: flex;
+  justify-content: space-between;
+  width: 12rem;
+}
+.card .header .salbavidas {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.card .header__titulo {
+  font-size: 2rem;
+}
+.card .header__descripcion {
+  color: rgb(173, 173, 173);
+}
+.card .header__img {
+  margin-left: 1rem;
+  height: 4rem;
+  float: right;
+}
+.card__semana {
+  margin-top: 1rem;
+  max-width: 350px;
+  height: 44%;
+  display: flex;
+  font-size: 1rem;
+}
+.card__semana .dia {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  width: 13.5%;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px rgb(206, 206, 206) solid;
+  box-sizing: border-box;
+}
+.card__semana .dia:last-of-type {
+  border-right: none;
+}
+.card__semana .dia__titulo {
+  margin: 0.5rem;
+}
+.card__semana .dia__grados {
+  margin: 0.5rem;
+  font-weight: bold;
+}
+.card .interruptor {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .interruptor__grados {
+  margin: 0 1rem;
+}
+
+.dia {
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --color-green: #00a878;
+  --color-red: #fe5e41;
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+
+.switch-button {
+  display: inline-block;
+}
+.switch-button__checkbox {
+  display: none;
+}
+.switch-button__label {
+  background-color: var(--color-red);
+  width: 2rem;
+  height: 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  position: relative;
+}
+.switch-button__label:before {
+  transition: 0.2s;
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-button);
+  content: "";
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--color-green);
+}
+.switch-button__checkbox:checked + .switch-button__label::before {
+  transform: translateX(1rem);
+}
+
+/*# sourceMappingURL=estilos.css.map */

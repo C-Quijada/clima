@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card Tiempo</title>
+   
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <!--Aqui esta la coneccion al la temperatura a mostrar-->
+          <div class="salbavidas">
+            <span id="grados" class="header__titulo">29 C°</span>
+            <span class="descripcion">Solidado</span>
+          </div>
+          <img
+            src="assets/img/brightness-high.svg"
+            alt=""
+            class="header__img"
+          />
+        </div>
+
+        <div class="card__semana">
+          <div class="dia">
+            <div class="dia__titulo">Lun</div>
+            <img src="assets/img/brightness-high-fill.svg" alt="soleado" />
+           <span class="dia__grados">23</span>
+            
+          </div>
+          <div class="dia">
+            <div class="dia__titulo">Mar</div>
+            <img src="assets/img/brightness-high-fill.svg" alt="soleado" />
+            <span class="dia__grados">15</span>
+          </div>
+          <div class="dia">
+            <div class="dia__titulo">Mie</div>
+            <img src="assets/img/brightness-high-fill.svg" alt="soleado" />
+           <span class="dia__grados">27</span>
+          </div>
+          <div class="dia">
+            <div class="dia__titulo">Jue</div>
+            <img src="assets/img/brightness-high-fill.svg" alt="soleado" />
+          
+              <span class="dia__grados">26</span>
+          </div>
+          <div class="dia">
+            <div class="dia__titulo">Vie</div>
+            <img src="assets/img/brightness-high-fill.svg" alt="soleado" />
+           <span class="dia__grados">27</span>
+          </div>
+          <div class="dia">
+            <div class="dia__titulo">Sab</div>
+            <img src="assets/img/brightness-high-fill.svg" alt="soleado" />
+            <span class="dia__grados">27</span>
+          </div>
+          <div class="dia">
+            <div class="dia__titulo">Dom</div>
+            <img src="assets/img/brightness-high-fill.svg" alt="soleado" />
+           <span class="dia__grados">29</span>
+          </div>
+        </div>
+
+        <div class="interruptor">
+          <span class="interruptor__grados">C°</span>
+          <div class="switch-button">
+            <!-- Checkbox -->
+            <input
+              type="checkbox"
+              name="switch-button"
+              id="switch-label"
+              class="switch-button__checkbox"
+              onclick="cambioRegla()"/>
+            <!-- Botón -->
+            <label for="switch-label" class="switch-button__label"></label>
+          </div>
+          <span class="interruptor__grados">F°</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/myscrippt.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+.card {
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  background-image:linear-gradient(rgba(105, 105, 105, 0.5), rgba(158, 158, 158, 0.5)), url(../img/nubes-mullidas-cielo-ventoso.avif);
+  background-size: 100% 100%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  color: white ;
+  width: 400px;
+
+
+  .header {
+    height: 44%;
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+
+    .salbavidas {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+    }
+    &__titulo {
+      font-size: 2rem;
+    }
+
+    &__descripcion {
+      color: rgb(173, 173, 173);
+    }
+
+    &__img {
+      margin-left: 1rem;
+      height: 4rem;
+      float: right;
+    }
+  }
+
+  &__semana {
+    margin-top: 1rem;
+    
+    max-width: 350px;
+    height: 44%;
+    display: flex;
+    font-size: 1rem;
+
+    .dia {
+      display: flex;
+      height: 50%;
+      flex-direction: column;
+      width: 13.5%;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px rgb(206, 206, 206) solid;
+      box-sizing: border-box;
+    
+      &:last-of-type {
+        border-right: none;
+      }
+
+      &__titulo {
+        margin: 0.5rem;
+      }
+
+      &__grados {
+        margin: 0.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .interruptor {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__grados {
+      margin: 0 1rem;
+    }
+  }
+}
+
+.dia {
+  margin: 1px;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+
